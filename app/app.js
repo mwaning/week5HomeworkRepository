@@ -11,25 +11,25 @@ function calculate() {
   let expression = document.getElementById("expressions").value;
 
   if (number1 == "") {
-    answerP.textContent = `Error: No number in input.`;
+    answerP.innerHTML = `Error: No number in input.`;
   } else if (number2 == "") {
-    answerP.textContent = `Error: No number in input.`;
+    answerP.innerHTML = `Error: No number in input.`;
   } else {
     if (expression == "add") {
       let answer = Number(number1) + Number(number2);
-      answerP.textContent = `The sum of ${number1} and ${number2} is ${answer}.`;
+      answerP.innerHTML = `The sum of ${number1} and ${number2} is ${answer}.`;
     } else if (expression == "subtract") {
       let answer = Number(number1) - Number(number2);
-      answerP.textContent = `The difference between ${number1} and ${number2} is ${answer}.`;
+      answerP.innerHTML = `The difference between ${number1} and ${number2} is ${answer}.`;
     } else if (expression == "multiply") {
       let answer = Number(number1) * Number(number2);
-      answerP.textContent = `The product of ${number1} and ${number2} is ${answer}.`;
+      answerP.innerHTML = `The product of ${number1} and ${number2} is ${answer}.`;
     } else if (expression == "divide") {
       let answer = Number(number1) / Number(number2);
       if (answer == "Infinity") {
-        answerP.textContent = `Error: Divide by zero.`;
+        answerP.innerHTML = `Error: Divide by zero.`;
       } else {
-        answerP.textContent = `The quotient of ${number1} and ${number2} is ${answer}.`;
+        answerP.innerHTML = `The quotient of ${number1} and ${number2} is ${answer}.`;
       }
     } else {
       console.log("Error");
