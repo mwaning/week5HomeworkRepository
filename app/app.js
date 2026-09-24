@@ -13,7 +13,7 @@ function calculate() {
   if (number1 == "") {
     answerP.textContent = `Error: No number in input.`;
   } else if (number2 == "") {
-    `Error: No number in input.`;
+    answerP.textContent = `Error: No number in input.`;
   } else {
     if (expression == "add") {
       let answer = Number(number1) + Number(number2);
