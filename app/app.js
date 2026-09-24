@@ -27,7 +27,7 @@ function calculate() {
     } else if (expression == "divide") {
       let answer = Number(number1) / Number(number2);
       if (answer == "Infinity") {
-        answerP.textContent = `Error: Divide by infinity.`;
+        answerP.textContent = `Error: Divide by zero.`;
       } else {
         answerP.textContent = `The quotient of ${number1} and ${number2} is ${answer}.`;
       }
